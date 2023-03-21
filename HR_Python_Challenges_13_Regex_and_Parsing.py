@@ -1265,7 +1265,7 @@ and len(re.findall(regex_alternating_repetitive_digit_pair, P)) < 2)
 #
 # Neo has a complex matrix script. The matrix script is a NxM grid of strings. It consists of alphanumeric characters, spaces and symbols (!,@,#,$,%,&).
 #
-# [/data/Matrix.jpg]
+# [/data/Matrix_Script.jpg]
 #
 # (https://s3.amazonaws.com/hr-challenge-images/12524/1442753362-1075bd12d9-Capture.JPG)
 #
@@ -1342,5 +1342,4 @@ for j in range(m):
         text += row[j]
 
 print(''.join(re.sub(r'(?<=[A-Za-z0-9])[\W_]+(?=[A-Za-z0-9])', ' ', text)))
-
 
